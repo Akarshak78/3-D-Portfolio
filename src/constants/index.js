@@ -10,21 +10,32 @@ import {
   reactjs,
   redux,
   tailwind,
+  bootstrap,
   nodejs,
+  express,
   mongodb,
+  mysql,
+  firebase,
+  cybersecurity,
   git,
+  github,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  vscode,
+  postman,
+  threejs,
+  cpp,
+  python,
+  book,
+  brain,
+  bulb,
+  project,
+  rocket,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
-
+import { FaGithub } from "react-icons/fa";
 export const navLinks = [
   {
     id: "about",
@@ -42,20 +53,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Frontend Developer",
+    icon: reactjs,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "UI/UX Designer",
+    icon: figma,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "AI / ML Enthusiast",
+    icon: python,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Cybersecurity Learner",
+    icon: cybersecurity,
   },
 ];
 
@@ -73,98 +84,113 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+
+  {
+    name: "Express JS",
+    icon: express,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Foundation in Programming & Web Concepts",
+    company_name: "Self-Guided Learning",
+    icon: book,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2023 - December 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Began foundational studies in programming, focusing on problem-solving and logic building.",
+      "Explored basic web technologies and development workflows.",
+      "Completed beginner-level courses and built first static web pages.",
+      "Developed a consistent self-study routine and technical curiosity.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Hands-on Web Development & Collaborative Learning",
+    company_name: "Independent Projects",
+    icon: brain,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "January 2024 - June 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built dynamic web applications and explored full-stack fundamentals.",
+      "Collaborated with peers to review code, share feedback, and tackle challenges.",
+      "Studied version control, deployment, and open-source contribution basics.",
+      "Started maintaining a personal GitHub portfolio with mini-projects.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Specialisation in Intelligent Systems & Backend Technologies",
+    company_name: "Focused Study Modules",
+    icon: bulb,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2024 - December 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Studied core concepts in AI/ML, backend development, and APIs.",
+      "Practiced model training using structured datasets and basic neural networks.",
+      "Created backend services and connected them with frontend clients.",
+      "Learned about secure coding, encryption, and authentication flows.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Capstone Projects & Real-World Simulation",
+    company_name: "Academic Labs & Peer Collaborations",
+    icon: project,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "January 2025 - June 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Undertook major projects simulating real-world software architecture.",
+      "Practiced debugging, testing, and project documentation.",
+      "Emphasised clean code principles, modular design, and maintainability.",
+      "Actively explored internship opportunities and professional mentorship.",
+    ],
+  },
+  {
+    title: "Portfolio Enhancement & Career Readiness",
+    company_name: "Ongoing Development",
+    icon: rocket,
+    iconBg: "#383E56",
+    date: "July 2025 - Present",
+    points: [
+      "Polishing personal portfolio with technically diverse and impactful projects.",
+      "Refining skills in specific domains such as intelligent systems and secure web architecture.",
+      "Engaging with the tech community through forums, events, and code contributions.",
+      "Preparing for career opportunities through mock interviews and skill-based certifications.",
     ],
   },
 ];
@@ -198,66 +224,33 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Project-1",
+    description: "Coming Soon!",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
     ],
-    image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Project-2",
+    description: "Coming Soon",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "restapi", color: "green-text-gradient" },
+      { name: "scss", color: "pink-text-gradient" },
     ],
-    image: jobit,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Project-3",
+    description: "Coming Soon",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "supabase", color: "green-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
-    image: tripguide,
     source_code_link: "https://github.com/",
   },
 ];

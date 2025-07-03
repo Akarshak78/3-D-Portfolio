@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,11 +20,21 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from "./tech/bootstrap.png";
+import cpp from "./tech/cpp.png";
+import firebase from "./tech/firebase.png";
+import express from "./tech/express.png";
+import mysql from "./tech/mysql.png";
+import postman from "./tech/postman.png";
+import python from "./tech/python.png";
+import vscode from "./tech/vscode.png";
+import cybersecurity from "./tech/cybersecurity.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import book from "./company/book.png";
+import brain from "./company/brain.png";
+import bulb from "./company/bulb.png";
+import project from "./company/project.png";
+import rocket from "./company/rocket.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -52,11 +62,21 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
+  bootstrap,
+  cpp,
+  express,
+  firebase,
+  mysql,
+  postman,
+  python,
+  vscode,
+  cybersecurity,
+  book,
+  brain,
+  bulb,
+  project,
+  rocket,
 };

@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -7,20 +7,37 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import { useSpring, animated } from "@react-spring/three";
 
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  const [hovered, setHovered] = useState(false);
+
+  const [{ rotationY }, api] = useSpring(() => ({
+    rotationY: 0,
+    config: { mass: 1, tension: 170, friction: 26 },
+  }));
+
+  const handlePointerOver = () => {
+    api.start({ rotationY: rotationY.get() + Math.PI * 2 });
+  };
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <animated.mesh
+        castShadow
+        receiveShadow
+        scale={2.75}
+        rotation-y={rotationY}
+        onPointerOver={handlePointerOver}
+      >
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -32,7 +49,7 @@ const Ball = (props) => {
           map={decal}
           flatShading
         />
-      </mesh>
+      </animated.mesh>
     </Float>
   );
 };
@@ -40,7 +57,7 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="always"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
@@ -48,7 +65,6 @@ const BallCanvas = ({ icon }) => {
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
