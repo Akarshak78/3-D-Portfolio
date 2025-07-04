@@ -11,10 +11,11 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="relative w-full min-h-screen mx-auto overflow-hidden"
+      className="relative w-full min-h-screen mx-auto overflow-hidden flex flex-col"
     >
+      {/* TEXT */}
       <div
-        className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-start gap-5 py-20 sm:py-32`}
+        className={`w-full max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-start gap-5 pt-32`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -23,7 +24,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Akarshak </span>
+            Hi, I'm <span className="text-[#915EFF]">Akarshak</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             A 3rd year college student passionate about building{" "}
@@ -33,17 +34,17 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full h-[250px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
+      {/* 3D MODEL */}
+      <div className="relative w-full flex-1 h-[250px] xs:h-[300px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
         <ComputersCanvas />
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center">
+      {/* SCROLL INDICATOR */}
+      <div className="absolute bottom-10 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
+              animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
