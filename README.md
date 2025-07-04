@@ -7,7 +7,7 @@ This is a modern, responsive website that showcases my skills, projects, and lea
 
 ## 📸 **Live Demo**
 
-👉 [Check it live here!](https://your-live-portfolio-link.com) _(replace with your deployed URL)_
+👉 [Check it live here!](https://3-d-portfolio-one-peach.vercel.app/) 
 
 ---
 
@@ -121,7 +121,7 @@ What you’ll learn by building this:
 
 ## 🙌 Connect with Me
 
-- 🌐 **Portfolio Website:** [your-website-link.com](https://your-website-link.com)
+- 🌐 **Portfolio Website:** [nice-link.com](https://3-d-portfolio-one-peach.vercel.app/)
 - 💼 **LinkedIn:** https://www.linkedin.com/in/akarshak-guleria-ak47/
 - ✉️ **Email:** guleriaakarshak90@gmail.com
 
